@@ -4,6 +4,11 @@ defaultContentLanguage = "en"
 title = "Pablo Menéndez"
 theme = "KeepIt"
 
+paginate = 12
+enableEmoji = true
+enableRobotsTXT = true
+googleAnalytics = ""
+disqusShortname = "yourdiscussshortname"
 
 
 [params]
