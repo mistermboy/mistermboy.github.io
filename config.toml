@@ -3,7 +3,7 @@ languageCode = "en"
 defaultContentLanguage = "en"
 title = "Pablo Menéndez"
 theme = "KeepIt"
-publishDir = "docs"
+
 
 
 [params]
