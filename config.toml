@@ -10,6 +10,20 @@ enableRobotsTXT = true
 googleAnalytics = ""
 disqusShortname = "yourdiscussshortname"
 
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[blackfriday]
+  hrefTargetBlank = true
+  nofollowLinks = true
+  noreferrerLinks = true
+
+[Permalinks]
+ posts = "/:year/:filename/"
+
+
 
 [params]
     since = 2019
