@@ -30,7 +30,7 @@ disqusShortname = "yourdiscussshortname"
 [params]
     since = 2019
     author = "Pablo Menéndez"           # Author's name
-    subtitle = "Software Engineer Undergraduate"       # Subtitle
+    subtitle = "Software Engineer"       # Subtitle
     cdn_url = ""           # Base CDN URL
     home_mode = "" # post or other
 
