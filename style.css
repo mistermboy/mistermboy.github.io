@@ -1,0 +1,145 @@
+/* .main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+}
+
+.center{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+
+.square{
+    position: relative;
+    background-color: black;
+    height:25vh;
+    width: 25vh;
+}
+
+.l-square{
+    border-radius: 75% 0% 0% 75%;
+}
+
+
+.r-square{
+    border-radius: 0% 75% 75% 0%;
+}
+
+.l-square-animate{
+    animation: l-square-animation 2s linear ;
+}
+
+
+.r-square-animate{
+    animation: r-square-animation 2s linear ;
+}
+
+@keyframes l-square-animation{
+    0%{top:0px;right: 0px;}
+    25%{top:0px;right: 150px;}
+    50%{top:0px;right: 300px;}
+    75%{top:0px;right: 150px;}
+    100%{top:0px;right: 0px;}
+}
+
+@keyframes r-square-animation{
+    0%{top:0px;left: 0px;}
+    25%{top:0px;left: 150px;}
+    50%{top:0px;left: 300px;}
+    75%{top:0px;left: 150px;}
+    100%{top:0px;left: 0px;}
+}
+
+
+
+
+*/
+
+
+
+
+
+.main{
+    display: grid;
+    grid-template-rows:20% 80%;
+    min-height:100vh;
+    background-color: #222;
+} 
+
+.ears{
+    display: grid;
+    grid-template-columns: 10% 20% 10%;
+    
+}
+
+.ear1Cont{
+    background-color: black;
+    z-index: 10000
+}
+
+.ear1{
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border: 10px solid white;
+    border-bottom: 0;
+    -moz-transform: scale(1.1) rotate(320deg) translate(-15px, 0px);
+    -webkit-transform: scale(1.1) rotate(320deg) translate(-15px, 0px);
+    -o-transform: scale(1.1) rotate(320deg) translate(-15px, 0px);
+    -ms-transform: scale(1.1) rotate(320deg) translate(-15px, 0px);
+    transform: scale(1.1) rotate(320deg) translate(-15px, 0px);
+   
+}
+
+.ear2{
+    margin-top: 20px;
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 100px;
+    border: 10px solid white;
+    border-bottom: 0;
+    -moz-transform: scale(1.1) rotate(40deg) translate(-15px, 0px);
+    -webkit-transform: scale(1.1) rotate(40deg) translate(-15px, 0px);
+    -o-transform: scale(1.1) rotate(40deg) translate(-15px, 0px);
+    -ms-transform: scale(1.1) rotate(40deg) translate(-15px, 0px);
+    transform: scale(1.1) rotate(40deg) translate(-15px, 0px);
+}
+
+.face{
+    background-color: black;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-top: 10px solid white;
+    z-index: 10000;
+}
+
+.front{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 90px;
+}
+
+.front1{
+    background-color: black;
+    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+}
+
+.front2{
+    background-color: black;
+    border-radius: 0% 100% 0% 0%;
+}
+
+
+.body{
+    display: grid;
+    
+    background-color: #e9f1a1;
+}
