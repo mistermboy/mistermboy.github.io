@@ -137,13 +137,13 @@
 
 .leftEyePupil{
     position: relative;
-    top:-50px;
-    left: 25px;
+    top:-60px;
+    left: -25px;
     width: 50px;
     height: 50px;
     border-radius: 100%;
     background-color: black;
-    animation: lefPupilAnimation 0.8s infinite linear;
+    /*animation: lefPupilAnimation 0.8s infinite linear;*/
 }
 
 
@@ -177,7 +177,7 @@
     height: 50px;
     border-radius: 100%;
     background-color: black;
-    animation: pupils 0.8s infinite linear;
+    /*animation: pupils 0.8s infinite linear;*/
 }
 
 @keyframes lefPupilAnimation {
