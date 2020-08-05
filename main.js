@@ -34,6 +34,13 @@ window.onload = function(){
         leftPupil.style.left= left
         rightPupil.style.top = top
         rightPupil.style.left= left
+
+        if(performance.now() > 10000){
+            document.getElementById('leftEyebrow').style.display = 'inline';
+            document.getElementById('rightEyebrow').style.display = 'inline';
+        }
+            
+
       });
 
 
