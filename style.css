@@ -101,6 +101,12 @@
     width: 220px;
     height: 220px;
     border-radius: 100%;
+
+    font-size: 24px;
+	filter: blur(0.02em);
+	-webkit-filter: blur(0.02em);
+	margin: 3em auto 0 auto;
+    background-image: radial-gradient(rgb(255,80,0) 20%, rgba(255,80,0,0) 100%);background-image: radial-gradient(rgb(255,80,0) 20%, rgba(255,80,0,0) 100%);
 }
 
 .leftEyePupil{
@@ -135,6 +141,12 @@
     width: 220px;
     height: 220px;
     border-radius: 100%;
+    
+    font-size: 24px;
+	filter: blur(0.02em);
+	-webkit-filter: blur(0.02em);
+	margin: 3em auto 0 auto;
+    background-image: radial-gradient(rgb(255,80,0) 20%, rgba(255,80,0,0) 100%);background-image: radial-gradient(rgb(255,80,0) 20%, rgba(255,80,0,0) 100%);
 }
 
 .rightEyePupil{
@@ -231,13 +243,16 @@
 
 
 .cros{
-    
     display: grid;
     justify-content: center;
     align-items: center;
+    
 }
 
 .fire{
+    position: relative;
+    left: -500px;
+    top:-100px;
     visibility:hidden;
     font-size: 24px;
 	filter: blur(0.02em);
@@ -275,3 +290,4 @@
 		transform: translateY(-10em) scale(0);
 	}
 }
+
