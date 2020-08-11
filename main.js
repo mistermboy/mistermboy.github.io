@@ -1,25 +1,4 @@
 window.onload = function(){
-
-/*     let animationBtn = document.getElementById('activateAnimation');
-    animationBtn.addEventListener("click", function(){
-        let lSquares = document.getElementsByClassName('l-square');
-        let counter = 0;
-        Object.keys(lSquares).map(s=>{
-            lSquares[s].classList.add('l-square-animate')
-            lSquares[s].style.animationDelay = counter+"s";
-            counter+=0.3;
-        })
-        counter = 0;
-        let rSquares = document.getElementsByClassName('r-square');
-        Object.keys(rSquares).map(s=>{
-            rSquares[s].classList.add('r-square-animate')
-            rSquares[s].style.animationDelay = counter+"s";
-            counter+=0.3;
-        })
-  
-    });
- */
-
     window.addEventListener('mousemove', function(e) {
         var xPos = e.pageX;
         var yPos = e.pageY;
@@ -35,13 +14,23 @@ window.onload = function(){
         rightPupil.style.top = top
         rightPupil.style.left= left
 
-        if(performance.now() > 10000){
+        if(performance.now() >1000){
             document.getElementById('leftEyebrow').style.display = 'inline';
             document.getElementById('rightEyebrow').style.display = 'inline';
+            document.getElementById('fire').style.visibility = 'visible';
         }
-            
 
       });
 
+      let fire = document.getElementById('fire');
+      for(let i=0;i<33;i++){
+        let particle = document.createElement('div');              
+        particle.classList.add('fireParticle');
+        particle.style.animationDelay = i*7000/30+'ms';
+        particle.style.left = i*30/30+'px';
+        fire.appendChild(particle);
+      }
+    
+      
 
 }
