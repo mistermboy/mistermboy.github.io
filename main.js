@@ -17,19 +17,21 @@ window.onload = function(){
         if(performance.now() >1000){
             document.getElementById('leftEyebrow').style.display = 'inline';
             document.getElementById('rightEyebrow').style.display = 'inline';
-            document.getElementById('fire').style.visibility = 'visible';
+            //document.getElementById('fire').style.visibility = 'visible';
+            document.getElementById('leftEyeIris').style.backgroundImage='radial-gradient(rgb(255,80,0) 20%, rgba(255,80,0,0) 100%)';
+            document.getElementById('rightEyeIris').style.backgroundImage='radial-gradient(rgb(255,80,0) 20%, rgba(255,80,0,0) 100%)';
         }
 
       });
 
-      let fire = document.getElementById('fire');
-      for(let i=0;i<33;i++){
+      /* let fire = document.getElementById('nose');
+      for(let i=0;i<35;i++){
         let particle = document.createElement('div');              
         particle.classList.add('fireParticle');
         particle.style.animationDelay = i*7000/30+'ms';
         particle.style.left = i*30/30+'px';
         fire.appendChild(particle);
-      }
+      } */
     
       
 
