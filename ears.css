@@ -1,0 +1,45 @@
+.panda-left-ear-container{
+    width: 100%;
+    height: 5rem;
+    display: grid;
+    justify-content: center;
+    align-items: flex-end;
+    animation-fill-mode: forwards;
+    animation-name: split-left;
+    animation-duration: 1000ms;
+    animation-delay: 1000ms;
+}
+.panda-left-ear{
+    background: black;
+    width: 10rem;
+    height: 8rem;
+    z-index: 10;
+    border-radius: 10rem 10rem 0 0 ;
+    margin-top: 9vh;
+    margin-left: 10vh;
+    transform: rotate(-40deg);
+    border: 5px solid white;
+}
+
+.panda-right-ear-container{
+    width: 100%;
+    height: 5rem;
+    display: grid;
+    justify-content: center;
+    align-items: flex-end;
+    animation-fill-mode: forwards;
+    animation-name: split-right;
+    animation-duration: 1000ms;
+    animation-delay: 1000ms;
+}
+.panda-right-ear{
+    background: black;
+    width: 10rem;
+    height: 7rem;
+    z-index: 10;
+    border-radius: 10rem 10rem 0 0 ;
+    margin-top: 10vh;
+    margin-left: -5vh;
+    transform: rotate(50deg);
+    border: 5px solid white;
+}
