@@ -1,33 +1,66 @@
 html,body{
     margin: 0;
     height: 100%;
-    background: black;
+    background: white;
 }
 
 .main-container{
     height: 100%;
+    width: 100%;
     display: grid;
     justify-content: center;
     align-items: center;
-    background-color: blue;
 }
 
 .panda-container{
-    padding: 1vh;
     display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: red;
-    height: 50vh;
-    width: 50vh;
+    grid-template-rows: 10% auto;
+    grid-template-columns: 100%;
 }
+
+
+.panda-ears-container{
+    display: grid;
+    grid-template-columns: auto auto;   
+    justify-content: space-between;
+    
+}
+
+.panda-bodys-container{
+    display: grid;
+    padding: 8vh;
+    grid-template-columns: 50% 50%;
+}
+
+.panda-left-ear{
+    background: black;
+    border: 1vh solid white;
+    width: 25vh;
+    height: 20vh;
+    margin-top: 16vh;
+    border-radius: 15vh 15vh 0 0;
+    transform: rotate(-50grad);
+    z-index: 10;
+}
+
+.panda-right-ear{
+    background: black;
+    border: 1vh solid white;
+    width: 25vh;
+    height: 20vh;
+    margin-top: 16vh;
+    border-radius: 15vh 15vh 0 0;
+    transform: rotate(45grad);
+    z-index: 10;
+ 
+}
+
 
 
 
 
 .panda-left-container{
     z-index: 20;
-    height: 50vh;
-    width: 25vh;
     /*
     animation-fill-mode: forwards;
     animation-name: split-left;
@@ -39,11 +72,11 @@ html,body{
 .panda-left-body{
     background: white;
     border-radius: 50vh 0  0 50vh;
-    height: 49vh;
-    width: 25vh;
-    border-top: 1vh solid black;
-    border-left: 1vh solid black;
-    border-bottom: 1vh solid black;
+    height: 58vh;
+    width: 30vh;
+    border-top: 2vh solid black;
+    border-left: 2vh solid black;
+    border-bottom: 2vh solid black;
 }
 
 
@@ -83,9 +116,11 @@ html,body{
 
 
 
+
+
 .panda-right-container{
     height: 50vh;
-    width: 25vh;
+    z-index: 20;
     /*
     animation-fill-mode: forwards;
     animation-name: split-right;
@@ -98,11 +133,11 @@ html,body{
 .panda-right-body{
     background: white;
     border-radius: 0 50vh 50vh 0;
-    height: 49vh;
-    width: 25vh;
-    border-top: 1vh solid black;
-    border-right: 1vh solid black;
-    border-bottom: 1vh solid black;
+    height: 58vh;
+    width: 30vh;
+    border-top: 2vh solid black;
+    border-right: 2vh solid black;
+    border-bottom: 2vh solid black;
 }
 
 
@@ -280,3 +315,5 @@ transform: translate(-10px, -40px) rotate(180deg);
 opacity: 0;
 }
 }
+
+

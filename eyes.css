@@ -14,10 +14,11 @@
     justify-content: end;
     align-items: flex-start;
     background-color: white;
-    height: 12vh;
-    width: 12vh;
+    height: 14vh;
+    width: 14vh;
+    margin-right: 1vh;
     border-radius: 100%;
-    border: 25px solid black;
+    border: 4vh solid black;
 }
 
 .panda-left-eye-pupil{
@@ -46,10 +47,10 @@
     justify-content: end;
     align-items: flex-start;
     background-color: white;
-    height: 12vh;
-    width: 12vh;
+    height: 14vh;
+    width: 14vh;
     border-radius: 100%;
-    border: 25px solid black;
+    border: 4vh solid black;
 }
 
 .panda-right-eye-pupil{
