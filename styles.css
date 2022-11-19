@@ -12,7 +12,7 @@ html,body{
 }
 
 .panda-container{
-    background-color: white;
+    padding: 1vh;
     width: 100vh;
     height: 50vh;
     display: grid;
@@ -20,12 +20,17 @@ html,body{
     grid-template-rows: auto auto auto auto;
 }
 
+
 .panda-left-ear-container{
     width: 100%;
     height: 5rem;
     display: grid;
     justify-content: center;
     align-items: flex-end;
+    animation-fill-mode: forwards;
+    animation-name: split-left;
+    animation-duration: 1000ms;
+    animation-delay: 1000ms;
 }
 .panda-left-ear{
     background: black;
@@ -43,6 +48,10 @@ html,body{
     justify-content: end;
     align-items: center;
     z-index: 20;
+    animation-fill-mode: forwards;
+    animation-name: split-left;
+    animation-duration: 1000ms;
+    animation-delay: 1000ms;
 }
 
 .panda-left-body{
@@ -53,7 +62,6 @@ html,body{
     border-left: 5px solid black;
     border-top: 5px solid black;
     border-bottom: 5px solid black;
-    
 }
 
 .panda-left-eye-containter{
@@ -86,6 +94,34 @@ html,body{
     margin-right: 2vh;
 }
 
+.panda-left-noise-container{
+    display: grid;
+    justify-content: end;
+}
+
+.panda-left-noise{
+    background: black;
+    border-radius: 0 0 0 10rem;
+    height: 4vh;
+    width: 4vh;
+}
+
+.panda-left-mouth-container{
+    display: grid;
+    justify-content: end;
+}
+
+.panda-left-mouth{
+    display: grid;
+    justify-content: end;
+    background: black;
+    margin-top: 3vh;
+    height: 1vh;
+    width: 4vh;
+    border-radius:  1rem 0  0 0 ;
+}
+
+
 
 
 
@@ -98,6 +134,10 @@ html,body{
     display: grid;
     justify-content: start;
     align-items: center;
+    animation-fill-mode: forwards;
+    animation-name: split-right;
+    animation-duration: 1000ms;
+    animation-delay: 1000ms;
 }
 
 .panda-right-ear-container{
@@ -106,6 +146,10 @@ html,body{
     display: grid;
     justify-content: center;
     align-items: flex-end;
+    animation-fill-mode: forwards;
+    animation-name: split-right;
+    animation-duration: 1000ms;
+    animation-delay: 1000ms;
 }
 .panda-right-ear{
     background: black;
@@ -149,7 +193,7 @@ html,body{
     border: 25px solid black;
 }
 
-.panda-left-right-pupil{
+.panda-right-eye-pupil{
     background-color: black;
     height: 4vh;
     width: 4vh;
@@ -158,4 +202,44 @@ html,body{
     margin-right: 2vh;
 }
 
+.panda-right-noise-container{
+    display: grid;
+    justify-content: start;
+    margin-top: 3vh;
+}
 
+.panda-right-noise{
+    background: black;
+    border-radius:0 0  10rem  0 ;
+    height: 4vh;
+    width: 4vh;
+}
+
+.panda-right-mouth-container{
+    display: grid;
+    justify-content: start;
+}
+
+.panda-right-mouth{
+    display: grid;
+    justify-content: end;
+    background: black;
+    margin-top: 3vh;
+    height: 1vh;
+    width: 4vh;
+    border-radius:  0 1rem 0 0 ;
+}
+
+
+
+@keyframes split-left {
+    from {margin-right: 0;}
+    to {margin-right: 50vh;
+        margin-left: -50vh;}
+  }
+  
+
+  @keyframes split-right {
+    from {margin-left: 0;}
+    to {margin-left: 50vh;}
+  }
