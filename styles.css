@@ -36,7 +36,7 @@ html,body{
     animation-fill-mode: forwards;
     animation-name: split-left;
     animation-duration: 1200ms;
-    animation-delay: 1000ms;
+    animation-delay: 500ms;
 }
 
 .panda-left-body{
@@ -57,7 +57,7 @@ html,body{
     animation-fill-mode: forwards;
     animation-name: split-right;
     animation-duration: 1200ms;
-    animation-delay: 1000ms;
+    animation-delay: 500ms;
 }
 
 

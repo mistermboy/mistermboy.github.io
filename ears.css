@@ -17,7 +17,7 @@
     animation-fill-mode: forwards;
     animation-name: appear;
     animation-duration: 1000ms;
-    animation-delay: 1000ms;
+    animation-delay: 500ms;
 }
 
 .panda-right-ear{
@@ -33,7 +33,7 @@
     animation-fill-mode: forwards;
     animation-name: appear;
     animation-duration: 1000ms;
-    animation-delay: 1000ms;
+    animation-delay: 500ms;
  
 }
 
