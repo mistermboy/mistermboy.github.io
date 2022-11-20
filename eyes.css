@@ -26,8 +26,8 @@
     height: 4vh;
     width: 4vh;
     border-radius: 100%;
-    margin-top: 2vh;
-    margin-right: 2vh;
+    position: relative;
+
 }
 
 
@@ -58,6 +58,5 @@
     height: 4vh;
     width: 4vh;
     border-radius: 100%;
-    margin-top: 2vh;
-    margin-right: 2vh;
+    position: relative;
 }
