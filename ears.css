@@ -1,45 +1,30 @@
-.panda-left-ear-container{
-    width: 100%;
-    height: 5rem;
+
+.panda-ears-container{
     display: grid;
-    justify-content: center;
-    align-items: flex-end;
-    animation-fill-mode: forwards;
-    animation-name: split-left;
-    animation-duration: 1000ms;
-    animation-delay: 1000ms;
+    grid-template-columns: auto auto;   
+    justify-content: space-between;
 }
 .panda-left-ear{
     background: black;
-    width: 10rem;
-    height: 8rem;
+    border: 1vh solid white;
+    width: 25vh;
+    height: 20vh;
+    margin-top: 4vh;
+    border-radius: 15vh 15vh 0 0;
+    transform: rotate(-50grad);
     z-index: 10;
-    border-radius: 10rem 10rem 0 0 ;
-    margin-top: 9vh;
-    margin-left: 10vh;
-    transform: rotate(-40deg);
-    border: 5px solid white;
 }
 
-.panda-right-ear-container{
-    width: 100%;
-    height: 5rem;
-    display: grid;
-    justify-content: center;
-    align-items: flex-end;
-    animation-fill-mode: forwards;
-    animation-name: split-right;
-    animation-duration: 1000ms;
-    animation-delay: 1000ms;
-}
 .panda-right-ear{
     background: black;
-    width: 10rem;
-    height: 7rem;
+    border: 1vh solid white;
+    width: 25vh;
+    height: 20vh;
+    margin-top: 4vh;
+    border-radius: 15vh 15vh 0 0;
+    transform: rotate(45grad);
     z-index: 10;
-    border-radius: 10rem 10rem 0 0 ;
-    margin-top: 10vh;
-    margin-left: -5vh;
-    transform: rotate(50deg);
-    border: 5px solid white;
+ 
 }
+
+

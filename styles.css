@@ -19,16 +19,6 @@ html,body{
     max-height: 58vh;
 }
 
-
-
-
-
-.panda-ears-container{
-    display: grid;
-    grid-template-columns: auto auto;   
-    justify-content: space-between;
-}
-
 .panda-bodys-container{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -37,40 +27,14 @@ html,body{
     padding-right: 8vh;
 }
 
-.panda-left-ear{
-    background: black;
-    border: 1vh solid white;
-    width: 25vh;
-    height: 20vh;
-    margin-top: 4vh;
-    border-radius: 15vh 15vh 0 0;
-    transform: rotate(-50grad);
-    z-index: 10;
-}
-
-.panda-right-ear{
-    background: black;
-    border: 1vh solid white;
-    width: 25vh;
-    height: 20vh;
-    margin-top: 4vh;
-    border-radius: 15vh 15vh 0 0;
-    transform: rotate(45grad);
-    z-index: 10;
- 
-}
-
-
-
 
 
 .panda-left-container{
     z-index: 20;
-    /*
     animation-fill-mode: forwards;
     animation-name: split-left;
     animation-duration: 1000ms;
-    animation-delay: 1000ms;*/
+    animation-delay: 1000ms;
 }
 
 .panda-left-body{
@@ -84,51 +48,14 @@ html,body{
 }
 
 
-.panda-left-noise-container{
-    display: grid;
-    justify-content: end;
-}
-
-.panda-left-noise{
-    background: black;
-    border-radius: 0 0 0 10rem;
-    height: 4vh;
-    width: 4vh;
-}
-
-.panda-left-mouth-container{
-    display: grid;
-    justify-content: end;
-}
-
-.panda-left-mouth{
-    display: grid;
-    justify-content: end;
-    background: black;
-    margin-top: 3vh;
-    height: 1vh;
-    width: 4vh;
-    border-radius:  1rem 0  0 0 ;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 .panda-right-container{
     height: 50vh;
-    z-index: 20;   /*
+    z-index: 20; 
     animation-fill-mode: forwards;
     animation-name: split-right;
     animation-duration: 1000ms;
-    animation-delay: 1000ms;*/
+    animation-delay: 1000ms;
 }
 
 
@@ -142,34 +69,6 @@ html,body{
     border-bottom: 2vh solid black;
 }
 
-
-.panda-right-noise-container{
-    display: grid;
-    justify-content: start;
-    margin-top: 3vh;
-}
-
-.panda-right-noise{
-    background: black;
-    border-radius:0 0  10rem  0 ;
-    height: 4vh;
-    width: 4vh;
-}
-
-.panda-right-mouth-container{
-    display: grid;
-    justify-content: start;
-}
-
-.panda-right-mouth{
-    display: grid;
-    justify-content: end;
-    background: black;
-    margin-top: 3vh;
-    height: 1vh;
-    width: 4vh;
-    border-radius:  0 1rem 0 0 ;
-}
 
 
 
@@ -203,96 +102,4 @@ html,body{
     to {opacity: 0;}
   }
   
-
-
-
-
-
-/* SVG FIRE */
-
-
-.mo-fire {
-    z-index: 1000;
-    animation-fill-mode: forwards;
-    animation-name: appear;
-    animation-duration: 5000ms;
-    animation-delay: 500ms;
-    opacity: 0;
-    height: auto;
-    position: fixed;
-    left:20%;
-    bottom: -50px;
-    z-index: 4;
-}
-
-
-.mo-fire svg {
-width: 230vh;
-height: auto;
-position:relative;
-right:50vh;
-top: 20vh;
-}
-.flame {
-animation-name: flameDisappear;
-animation-duration: 2s;
-animation-timing-function: linear;
-animation-iteration-count: infinite;
-opacity: 0.5;
-transform-origin: 45% 45% 0;
-}
-.flame.one {
-animation-delay: 1s;
-animation-duration: 3s;
-}
-.flame.two{
-animation-duration: 5s;
-animation-delay: 1s;
-}
-
-
-.flame-main {
-animation-name: flameMovement;
-animation-duration: 2s;
-animation-timing-function: ease-in-out;
-animation-iteration-count: infinite;
-}
-.flame-main.one {
-animation-duration: 2.2s;
-animation-delay: 1s;
-}
-.flame-main.two {
-animation-duration: 2s;
-animation-delay: 1s;
-}
-.flame-main.three {
-animation-duration: 2.1s;
-animation-delay: 3s;
-}
-.flame-main.four {
-animation-duration: 3.2s;
-animation-delay: 4s;
-}
-.flame-main.five {
-animation-duration: 2.5s;
-animation-delay: 5s;
-}
-@keyframes flameMovement {
-50% {
-transform: scale(0.98,1.0) translate(0, 2px) rotate(-1deg);
-}
-}
-@keyframes flameDisappear {
-0%{
-transform: translate(0) rotate(180deg);
-}
-50% {
- opacity: 1;
-}
-100% {
-transform: translate(-10px, -40px) rotate(180deg);
-opacity: 0;
-}
-}
-
 

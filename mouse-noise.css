@@ -1,0 +1,55 @@
+.panda-left-noise-container{
+    display: grid;
+    justify-content: end;
+}
+
+.panda-left-noise{
+    background: black;
+    border-radius: 0 0 0 10rem;
+    height: 4vh;
+    width: 5vh;
+}
+
+.panda-left-mouth-container{
+    display: grid;
+    justify-content: end;
+}
+
+.panda-left-mouth{
+    display: grid;
+    justify-content: end;
+    background: black;
+    margin-top: 3vh;
+    height: 1vh;
+    width: 5vh;
+    border-radius:  1rem 0  0 0 ;
+}
+
+
+.panda-right-noise-container{
+    display: grid;
+    justify-content: start;
+    margin-top: 3vh;
+}
+
+.panda-right-noise{
+    background: black;
+    border-radius:0 0  10rem  0 ;
+    height: 4vh;
+    width: 5vh;
+}
+
+.panda-right-mouth-container{
+    display: grid;
+    justify-content: start;
+}
+
+.panda-right-mouth{
+    display: grid;
+    justify-content: end;
+    background: black;
+    margin-top: 3vh;
+    height: 1vh;
+    width: 5vh;
+    border-radius:  0 1rem 0 0 ;
+}
