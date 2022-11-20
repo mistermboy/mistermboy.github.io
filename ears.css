@@ -13,6 +13,11 @@
     border-radius: 15vh 15vh 0 0;
     transform: rotate(-50grad);
     z-index: 10;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: appear;
+    animation-duration: 1000ms;
+    animation-delay: 1000ms;
 }
 
 .panda-right-ear{
@@ -24,7 +29,22 @@
     border-radius: 15vh 15vh 0 0;
     transform: rotate(45grad);
     z-index: 10;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: appear;
+    animation-duration: 1000ms;
+    animation-delay: 1000ms;
  
 }
 
+
+@keyframes appear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100;
+    }
+  }
+  
 

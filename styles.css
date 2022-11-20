@@ -2,6 +2,7 @@ html,body{
     margin: 0;
     height: 100%;
     background: #000000;
+    overflow-x: hidden;
 }
 
 .main-container{
@@ -31,9 +32,10 @@ html,body{
 
 .panda-left-container{
     z-index: 20;
+    opacity: 0;
     animation-fill-mode: forwards;
     animation-name: split-left;
-    animation-duration: 1000ms;
+    animation-duration: 1200ms;
     animation-delay: 1000ms;
 }
 
@@ -48,13 +50,13 @@ html,body{
 }
 
 
-
 .panda-right-container{
     height: 50vh;
+    opacity: 0;
     z-index: 20; 
     animation-fill-mode: forwards;
     animation-name: split-right;
-    animation-duration: 1000ms;
+    animation-duration: 1200ms;
     animation-delay: 1000ms;
 }
 
@@ -73,21 +75,25 @@ html,body{
 
 
 @keyframes split-left {
-    from {
-        margin-right: 0;
+    from{
+        opacity: 0;
+        margin-right: 60vh;
     }
-    to {
-        margin-right: 50vh;
+    to{
+        opacity: 100;
+        margin-right: 0vh;
     }
   }
   
 
   @keyframes split-right {
-    from {
-        margin-left: 0;
+    from{
+        opacity: 0;
+        margin-left: 60vh;
     }
-    to {
-        margin-left: 50vh;
+    to{
+        opacity: 100;
+        margin-left: 0vh;
     }
   }
 
