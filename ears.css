@@ -1,0 +1,50 @@
+
+.panda-ears-container{
+    display: grid;
+    grid-template-columns: auto auto;   
+    justify-content: space-between;
+}
+.panda-left-ear{
+    background: black;
+    border: 1vh solid white;
+    width: 25vh;
+    height: 20vh;
+    margin-top: 4vh;
+    border-radius: 15vh 15vh 0 0;
+    transform: rotate(-50grad);
+    z-index: 10;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: appear;
+    animation-duration: 1000ms;
+    animation-delay: 500ms;
+}
+
+.panda-right-ear{
+    background: black;
+    border: 1vh solid white;
+    width: 25vh;
+    height: 20vh;
+    margin-top: 4vh;
+    border-radius: 15vh 15vh 0 0;
+    transform: rotate(45grad);
+    z-index: 10;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: appear;
+    animation-duration: 1000ms;
+    animation-delay: 500ms;
+ 
+}
+
+
+@keyframes appear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100;
+    }
+  }
+  
+

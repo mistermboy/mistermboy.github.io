@@ -1,0 +1,111 @@
+html,body{
+    margin: 0;
+    height: 100%;
+    background: #000000;
+    overflow-x: hidden;
+}
+
+.main-container{
+     margin: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.panda-container{
+    display: grid;
+    grid-template-rows: 10% auto;
+    max-height: 58vh;
+}
+
+.panda-bodys-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-height: 58vh;
+    padding-left: 8vh;
+    padding-right: 8vh;
+}
+
+
+
+.panda-left-container{
+    z-index: 20;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: split-left;
+    animation-duration: 1200ms;
+    animation-delay: 500ms;
+}
+
+.panda-left-body{
+    background: white;
+    border-radius: 50vh 0  0 50vh;
+    height: 58vh;
+    width: 30vh;
+    border-top: 2vh solid black;
+    border-left: 2vh solid black;
+    border-bottom: 2vh solid black;
+}
+
+
+.panda-right-container{
+    height: 50vh;
+    opacity: 0;
+    z-index: 20; 
+    animation-fill-mode: forwards;
+    animation-name: split-right;
+    animation-duration: 1200ms;
+    animation-delay: 500ms;
+}
+
+
+.panda-right-body{
+    background: white;
+    border-radius: 0 50vh 50vh 0;
+    height: 58vh;
+    width: 30vh;
+    border-top: 2vh solid black;
+    border-right: 2vh solid black;
+    border-bottom: 2vh solid black;
+}
+
+
+
+
+@keyframes split-left {
+    from{
+        opacity: 0;
+        margin-right: 60vh;
+    }
+    to{
+        opacity: 100;
+        margin-right: 0vh;
+    }
+  }
+  
+
+  @keyframes split-right {
+    from{
+        opacity: 0;
+        margin-left: 60vh;
+    }
+    to{
+        opacity: 100;
+        margin-left: 0vh;
+    }
+  }
+
+  
+  @keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 100;}
+  }
+  
+  @keyframes disapear {
+    from {opacity: 100;}
+    to {opacity: 0;}
+  }
+  
+
