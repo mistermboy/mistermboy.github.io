@@ -1,20 +1,16 @@
-window.onload = function(){
-    window.addEventListener('mousemove', function(e) {
-        var xPos = e.pageX;
-        var yPos = e.pageY;
-        let leftPupil = document.getElementById('leftPupil');
-        let rightPupil = document.getElementById('rightPupil');
-        
-        let top  = (yPos/10)+'px';
-        if(xPos>900)xPos=900
-        if(xPos<300)xPos=300
-        let left = (xPos/10) - 90 +'px';
+//This is a pen based off of Codewoofy's eyes follow mouse. It is just cleaned up, face removed, and then made to be a little more cartoony. https://codepen.io/Codewoofy/pen/VeBJEP
 
-        leftPupil.style.top = top
-        rightPupil.style.top = top
-        leftPupil.style.left= left
-        rightPupil.style.left= left
-    
-    
-      });
-}
+$(".main-container").mousemove(function(event) {
+  var eye = $(".eye");
+  console.log('eye', eye)
+  var x = (eye.offset().left) + (eye.width() / 2);
+  var y = (eye.offset().top) + (eye.height() / 2);
+  var rad = Math.atan2(event.pageX - x, event.pageY - y);
+  var rot = (rad * (180 / Math.PI) * -1) + 180;
+  eye.css({
+    '-webkit-transform': 'rotate(' + rot + 'deg)',
+    '-moz-transform': 'rotate(' + rot + 'deg)',
+    '-ms-transform': 'rotate(' + rot + 'deg)',
+    'transform': 'rotate(' + rot + 'deg)'
+  });
+});
