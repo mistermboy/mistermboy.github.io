@@ -22,15 +22,13 @@
 
 .eye:after{
     position: absolute;
-    bottom: 17px;
-    right: 10px;
+    bottom: 5vh;
     width: 3vh;
     height: 3vh;
     background: #000;
     border-radius: 50%;
     content: " ";
 }
-
 
 
 
