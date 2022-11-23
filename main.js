@@ -1,20 +1,15 @@
-window.onload = function(){
-    window.addEventListener('mousemove', function(e) {
-        var xPos = e.pageX;
-        var yPos = e.pageY;
-        let leftPupil = document.getElementById('leftPupil');
-        let rightPupil = document.getElementById('rightPupil');
-        
-        let top  = (yPos/10)+'px';
-        if(xPos>900)xPos=900
-        if(xPos<300)xPos=300
-        let left = (xPos/10) - 90 +'px';
+/*https://codepen.io/shantanu-jana/pen/yLprQjR*/
 
-        leftPupil.style.top = top
-        rightPupil.style.top = top
-        leftPupil.style.left= left
-        rightPupil.style.left= left
-    
-    
-      });
+document.querySelector("body").addEventListener("mousemove", eyeball);
+
+function eyeball() {
+  const eye = document.querySelectorAll(".eye");
+  eye.forEach(function (eye) {
+    let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
+    let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
+
+    let radian = Math.atan2(event.pageX - x, event.pageY - y);
+    let rotate = radian * (180 / Math.PI) * -1 + 270;
+    eye.style.transform = "rotate(" + rotate + "deg)";
+  });
 }

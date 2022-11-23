@@ -9,24 +9,25 @@
     padding-top: 3vh;
 }
 
-.panda-left-eye{
-    display: grid;
-    justify-content: end;
-    align-items: flex-start;
+.eye{
+    position: relative;
+    display: inline-block;
     background-color: white;
     height: 14vh;
     width: 14vh;
-    margin-right: 1vh;
-    border-radius: 100%;
+    border-radius: 50%;
     border: 4vh solid black;
+
 }
 
-.panda-left-eye-pupil{
-    background-color: black;
-    height: 4vh;
-    width: 4vh;
-    border-radius: 100%;
-    position: relative;
+.eye:after{
+    position: absolute;
+    bottom: 5vh;
+    width: 3vh;
+    height: 3vh;
+    background: #000;
+    border-radius: 50%;
+    content: " ";
 }
 
 
