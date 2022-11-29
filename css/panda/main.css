@@ -1,23 +1,7 @@
-html,body{
-    margin: 0;
-    height: 100%;
-    background: #000000;
-    overflow-x: hidden;
-}
-
-.main-container{
-     margin: 0;
-    height: 100%;
-    width: 100%;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
 .panda-container{
     display: grid;
-    grid-template-rows: 10% auto;
-    max-height: 58vh;
+    grid-template-rows: 5% auto;
+    height: 67vh;
 }
 
 .panda-bodys-container{
@@ -27,8 +11,6 @@ html,body{
     padding-left: 8vh;
     padding-right: 8vh;
 }
-
-
 
 .panda-left-container{
     z-index: 20;

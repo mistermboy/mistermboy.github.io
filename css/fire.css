@@ -4,7 +4,6 @@
 
 
 .mo-fire {
-    z-index: 1000;
     animation-fill-mode: forwards;
     animation-name: appear;
     animation-duration: 4000ms;
@@ -12,9 +11,10 @@
     opacity: 0;
     height: auto;
     position: fixed;
-    left:20%;
+    left:80%;
+    padding: 10vh;
     bottom: -40px;
-    z-index: 4;
+    background-color: yellow;
 }
 
 
