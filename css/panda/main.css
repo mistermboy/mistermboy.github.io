@@ -2,6 +2,7 @@
     display: grid;
     grid-template-rows: 5% auto;
     height: 67vh;
+    justify-content: center;
 }
 
 .panda-bodys-container{
